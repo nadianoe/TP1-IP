@@ -20,7 +20,11 @@ def actualizar(silabasEnPantalla,posiciones,listaDeSilabas):
 
 
 def nuevaSilaba(silabas):
-    pass
+    size = len(silabas)
+    posicionAzarosa = random.randint(0,size - 1)
+    silabaElegida = silabas[posicionAzarosa]
+    return silabaElegida
+
 
 def quitar(candidata, silabasEnPantalla, posiciones):
     pass
