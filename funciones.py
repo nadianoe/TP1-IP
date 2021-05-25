@@ -8,7 +8,9 @@ import math
 def lectura(archivo, lista):
     lineas = archivo.readlines()
     for linea in lineas:
-        lista.append(linea)
+        lineaSinSalto= linea[:-1]
+        lista.append(lineaSinSalto)
+    archivo.close()
 
 
 def actualizar(silabasEnPantalla,posiciones,listaDeSilabas):

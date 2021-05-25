@@ -32,10 +32,11 @@ def main():
         listaDeSilabas=[]
         lemario=[]
 
-        archivo= open("silabas.txt","r")
+        archivo = open("silabas.txt","r")
         lectura(archivo, listaDeSilabas)
+        print(listaDeSilabas)
 
-        archivo2= open("lemario.txt","r")
+        archivo2 = open("lemario.txt","r")
         lectura(archivo2, lemario)
 
         dibujar(screen, candidata, silabasEnPantalla, posiciones, puntos,segundos)
