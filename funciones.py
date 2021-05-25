@@ -6,18 +6,14 @@ import random
 import math
 
 def lectura(archivo, lista):
-    f = open("silabas.txt", "r")
-    silabas = []
+    f = open(archivo, "r")
     lineas = f.readlines()
     for linea in lineas:
-        silabas.append(int(linea))
-    print(silabas)
-
+        lista.append(int(linea))
 
 
 def actualizar(silabasEnPantalla,posiciones,listaDeSilabas):
     pass
-
 
 def nuevaSilaba(silabas):
     size = len(silabas)
@@ -25,12 +21,11 @@ def nuevaSilaba(silabas):
     silabaElegida = silabas[posicionAzarosa]
     return silabaElegida
 
-
 def quitar(candidata, silabasEnPantalla, posiciones):
-    pass
+
 
 def dameSilabas(candidata):
-    pass
+
 
 
 def esValida(candidata, silabasEnPantalla, lemario):
