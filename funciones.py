@@ -5,6 +5,8 @@ from funcionesSeparador import *
 import random
 import math
 
+#hola 
+
 def lectura(archivo, lista):
     lineas = archivo.readlines()
     for linea in lineas:
